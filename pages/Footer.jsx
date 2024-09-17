@@ -60,7 +60,7 @@ const Footer = () => {
                 p-2 items-center justify-center flex" whileHover="hover" whileTap="tap" variants={buttonVariants}
               >
                 <i className="fab fa-discord flex text-[20px]"></i>
-                <p className="ml-2 font-bold text-[13px]"> Join our Discord— Community</p>
+                <p className="ml-2 font-bold text-[13px]"> Join our Discord</p>
               </motion.button>
           </a>
         </div>

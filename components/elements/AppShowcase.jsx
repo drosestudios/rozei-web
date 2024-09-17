@@ -14,7 +14,7 @@ const AppShowcase = () => {
         initial="hidden" animate="visible" variants={containerVariants} transition={{ duration: 0.3 }}
       >
         {/* IMAGE BACK AND PREVIEW */}
-        <div className="p-5">
+        <div className="p-5 flex flex-col gap-3 md:gap-16">
           <div className="flex dark:bg-white rounded-md flex-row items-center justify-center">
             <Slider {...settingsSlider} className='w-full h-full md:h-[465px] rounded-lg'>
                 <motion.img src="/app02.png" className=" object-cover rounded-lg"
@@ -26,7 +26,7 @@ const AppShowcase = () => {
             </Slider>
           </div>
 
-          <div className="text-justify mt-6 md:mt-10">
+          <div className="text-justify">
             <motion.p className="text-[16px] font-medium whitespace-wrap text-black dark:text-gray-100"
               initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3 }}
             >

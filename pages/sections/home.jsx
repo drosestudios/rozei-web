@@ -27,7 +27,7 @@ export default function Home() {
         <div className="flex text-center items-center justify-center mt-20 flex-col">
             <div className="flex flex-col ">
                 <p className="font-bold text-[25px] mb-2"> バラ色の — Minimalist, <br className="flex md:hidden"></br> Elegant w/ Anime ♥ </p>
-                <p className="font-normal text-[17px]"> Rosey is a next-gen organizer for your animes watchlist <br></br>.... where design meets stylish and waifus! </p>
+                <p className="font-normal text-[17px]"> Rosey is a next-gen organizer for your animes watchlist <br className="hidden md:block"></br>.... where design meets stylish and waifus! </p>
             </div>
 
             <div className="flex flex-row mt-4 gap-2">

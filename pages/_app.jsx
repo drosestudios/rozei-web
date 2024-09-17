@@ -18,7 +18,7 @@ const Router = dynamic(
 function MyApp() {
     return (
         <Router>
-            <main className="pt-2 px-[40px] mx-auto max-w-4xl">
+            <main className="p-5 mx-auto max-w-4xl">
                 <Header />
                 <div className="w-full mt-6 border-dashed border-b-2 border-[#1111111]"></div>
 
