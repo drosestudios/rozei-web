@@ -13,11 +13,8 @@ const Footer = () => {
       <motion.div className="flex md:flex-row gap-3 flex-col justify-between items-center"
         initial="hidden" animate="visible" variants={footerVariants} transition={{ duration: 0.5 }}
       >
-        <p className="font-bold text-[22px] flex justify-center items-center"> MIT License |
-          <a href="https://opensource.org/license/mit" target="_blank"
-            className="ml-2 font-bold text-[15px] text-blue-500 hover:underline"
-          > Documentation
-          </a>
+        <p className="font-semibold text-[20px] flex justify-center items-center">
+            © Studios D'Rose 2024
         </p>
 
         <div className="flex flex-row gap-1">
