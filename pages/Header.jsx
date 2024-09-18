@@ -59,10 +59,12 @@ const Header = () => {
             <div className="flex flex-row gap-2">
                 <motion.div {...hoverEffect}> <ColorModeToggle /> </motion.div>
 
-                <motion.button className="md:flex hidden verflow-hidden dark:text-black dark:bg-white bg-[#282828] hover:bg-[#555555] rounded-md justify-center items-center h-[35px] w-full p-3 text-white cursor-pointer transition duration-100 ease-in-out" {...hoverEffect}>
-                    <i className="fab fa-apple flex text-[17px]"></i>
-                    <p className="ml-2 font-bold text-[13px]"> Download </p>
-                </motion.button>
+                <a href='https://github.com/drosestudios/rosey/releases/download/untagged-f5f25291077da4915aae/Rosey-1.0.0-arm64-mac.zip'>
+                    <motion.button className="md:flex hidden verflow-hidden dark:text-black dark:bg-white bg-[#282828] hover:bg-[#555555] rounded-md justify-center items-center h-[35px] w-full p-3 text-white cursor-pointer transition duration-100 ease-in-out" {...hoverEffect}>
+                        <i className="fab fa-apple flex text-[17px]"></i>
+                        <p className="ml-2 font-bold text-[13px]"> Download </p>
+                    </motion.button>
+                </a>
 
             </div>
             </nav>

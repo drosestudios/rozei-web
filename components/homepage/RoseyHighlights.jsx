@@ -4,8 +4,8 @@ const RoseyHighlights = () => {
       <div className='w-full'>
 
         <div className="dark:bg-[#222222] shadow-md w-full h-auto rounded-md p-4 items-center">
-          <div className='flex flex-row justify-between'>
-            <h1 className="font-bold text-[22px]"> MADE BY A FAN FOR YOU! </h1>
+          <div className='flex flex-col gap-2 md:flex-row justify-between'>
+            <h1 className="font-bold md:text-left text-center text-[22px]"> MADE BY A FAN FOR YOU! </h1>
             <div className='flex pl-4 pr-4 p-1 items-center bg-[#f2f2f2] dark:bg-[#333333]
             rounded-md w-auto h-auto justify-center'>
               <p className='font-bold text-[17px]'> ロージーオーガナイザー </p>

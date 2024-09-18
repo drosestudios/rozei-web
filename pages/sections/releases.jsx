@@ -48,7 +48,7 @@ export default function Releases() {
         </div>
 
         <div className="grid grid-flow-row md:grid-cols-2 sm:grid-row-1 gap-2 mt-5">
-            <ComponentReleaseLogs version="1.0.0 (Release Candidate)" date="29/08/2024" subtitle='CHANGELOGS'
+            <ComponentReleaseLogs version="1.0.0 (Release Candidate)" date="17/09/2024" subtitle='CHANGELOGS'
                 urlpkg='https://github.com/drosestudios/rosey/releases/download/untagged-f5f25291077da4915aae/Rosey-1.0.0-arm64-mac.zip'
                 urldmg='https://github.com/drosestudios/rosey/releases/download/untagged-f5f25291077da4915aae/Rosey-1.0.0-arm64.dmg'
                 logs={[

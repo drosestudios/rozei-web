@@ -1,6 +1,7 @@
 import Head from "next/head";
 import dynamic from 'next/dynamic';
 import { motion } from 'framer-motion';
+import { Link } from "react-router-dom";
 
 const RoseyShowcase = dynamic(() => import("../../components/elements/AppShowcase"), { ssr: false });
 const RoseyFeatures = dynamic(() => import("../../components/homepage/RoseyFeatures"), { ssr: false });
@@ -31,10 +32,12 @@ export default function Home() {
             </div>
 
             <div className="flex flex-row mt-4 gap-2">
-                <motion.button {...hoverEffect} className="button-app flex overflow-hidden dark:text-black dark:bg-white bg-[#282828] hover:bg-[#555555] rounded-md justify-center items-center h-[35px] w-[150px] p-3 text-white cursor-pointer transition duration-100 ease-in-out">
-                        <i className="fi fi-br-download flex text-[17px]"></i>
-                        <p className="ml-2 font-bold text-[13px]"> Download now </p>
-                </motion.button>
+                <Link to={`/releases`}>
+                    <motion.button {...hoverEffect} className="button-app flex overflow-hidden dark:text-black dark:bg-white bg-[#282828] hover:bg-[#555555] rounded-md justify-center items-center h-[35px] w-[150px] p-3 text-white cursor-pointer transition duration-100 ease-in-out">
+                            <i className="fi fi-br-download flex text-[17px]"></i>
+                            <p className="ml-2 font-bold text-[13px]"> Download now </p>
+                    </motion.button>
+                </Link>
 
                 <motion.a {...hoverEffect} href="https://github.com/drosestudios/Rosey" target="_blank" className="flex overflow-hidden dark:text-white dark:border-white hover:bg-[#282828] rounded-md border-[4px] border-black justify-center items-center h-[35px] w-[130px] p-3 hover:text-white dark:hover:bg-white dark:hover:text-black text-black cursor-pointer transition duration-100 ease-in-out">
                         <i className="fi fi-br-square-terminal flex text-[17px]"></i>

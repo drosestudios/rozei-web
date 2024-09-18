@@ -23,10 +23,10 @@ const AppStaffTeam = () => {
               className='object-cover rounded-lg h-[210px] md:w-[200px] aspect-square'/>
 
             <div className='md:mt-4 flex flex-col'>
-              <h1 className="font-bold text-[20px]"> ANGELO JOHAO FIGUEROA MEJIA </h1>
+              <h1 className="font-bold text-[18px] md:text-[20px]"> ANGELO JOHAO FIGUEROA MEJIA </h1>
 
               <p className="mt-1 font-bold text-[16px] text-stone-600 dark:text-white flex flex-row gap-1"
-              > Roles: <span className='font-normal text-black dark:text-white'>Programmer & Designer / Musician</span> </p>
+              > Roles: <span className='font-normal text-black dark:text-white'>Programmer & Designer</span> </p>
 
               <p className="mt-4 font-normal text-[16px]">
                 From a young age, I've been captivated by technology, always eager to understand and create. My journey into programming and design began with a passion for innovation—if something didn’t exist, I would build it myself, often infusing my work with minimalist aesthetics and a black and gray tones.
