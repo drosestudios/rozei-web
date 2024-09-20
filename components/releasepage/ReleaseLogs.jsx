@@ -19,7 +19,7 @@ const ReleaseLogs = ({ info, version, date, urlpkg, urldmg }) => {
 
                     <p className='font-normal text-[17px] mt-4'>{info}</p>
 
-                    <div className='flex flex-row mt-4 border-[1px] border-black rounded-md p-4'>
+                    <div className='flex flex-row mt-4 border-[1px] dark:border-white border-black rounded-md p-4'>
                         <div className='flex flex-col w-full gap-2'>
 
                             <div className='flex flex-row gap-2 md:gap-[120px] items-center'>
