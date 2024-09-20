@@ -51,8 +51,8 @@ export default function Releases() {
             <ComponentReleaseLogs
                 version="v1.0.0" date="19/09/2024"
                 info='Our first release of the application, everything from the beta phase shown to several users was corrected, receiving feedback and details to improve previously, more additions and improvements coming soon. Our application aims to organize your animes in a simpler and easier way, without the need for an external database, just add and add the information!'
-                urlpkg='https://github.com/drosestudios/rosey/releases/download/untagged-f8a99228b17c5cf04f21/Rosey-1.0.0-arm64-mac.zip'
-                urldmg='https://github.com/drosestudios/rosey/releases/download/untagged-f8a99228b17c5cf04f21/Rosey-1.0.0-arm64.dmg'/>
+                urlpkg='https://github.com/drosestudios/rosey/releases/download/1.0.0/Rosey-1.0.0-arm64-mac.zip'
+                urldmg='https://github.com/drosestudios/rosey/releases/download/1.0.0/Rosey-1.0.0-arm64.dmg'/>
         </div>
     </motion.main>
   );
