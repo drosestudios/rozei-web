@@ -61,7 +61,7 @@ export default function Home() {
                         <div className='bg-green-200 rounded-[50%] w-[18px] h-[18px]'></div>
                     </div>
                 </div>
-                <iframe className="mt-2 w-full h-[250px] md:h-[500px] rounded-lg" src="https://www.youtube.com/embed/uIWy-36o69w?si=6PUMXIoN9Bdpeqcx" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe className="mt-2 w-full h-[250px] md:h-[500px] rounded-lg" src="https://www.youtube.com/embed/9EpF1qSNsOg?si=G0rTKEXF8dP78evO" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
 
             <RoseyFeatures></RoseyFeatures>
