@@ -47,14 +47,12 @@ export default function Releases() {
             icon='folder-download'/>
         </div>
 
-        <div className="grid grid-flow-row md:grid-cols-2 sm:grid-row-1 gap-2 mt-5">
-            <ComponentReleaseLogs version="1.0.0 (Release Candidate)" date="17/09/2024" subtitle='CHANGELOGS'
-                urlpkg='https://github.com/drosestudios/rosey/releases/download/untagged-f5f25291077da4915aae/Rosey-1.0.0-arm64-mac.zip'
-                urldmg='https://github.com/drosestudios/rosey/releases/download/untagged-f5f25291077da4915aae/Rosey-1.0.0-arm64.dmg'
-                logs={[
-                    "Initial release based on extensive beta testing.",
-                    "Multiple improvements and bug fixes."
-            ]}/>
+        <div className="flex flex-col gap-2 mt-5">
+            <ComponentReleaseLogs
+                version="v1.0.0" date="19/09/2024"
+                info='Our first release of the application, everything from the beta phase shown to several users was corrected, receiving feedback and details to improve previously, more additions and improvements coming soon. Our application aims to organize your animes in a simpler and easier way, without the need for an external database, just add and add the information!'
+                urlpkg='https://github.com/drosestudios/rosey/releases/download/untagged-f8a99228b17c5cf04f21/Rosey-1.0.0-arm64-mac.zip'
+                urldmg='https://github.com/drosestudios/rosey/releases/download/untagged-f8a99228b17c5cf04f21/Rosey-1.0.0-arm64.dmg'/>
         </div>
     </motion.main>
   );

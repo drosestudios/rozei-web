@@ -8,7 +8,7 @@ const RoseyFeatures = () => {
   return (
     <section className="flex justify-center items-center">
       <div className='w-full'>
-        <motion.div className="mt-4 w-full flex md:flex-row flex-col gap-4"
+        <motion.div className="w-full flex md:flex-row flex-col gap-4"
           variants={containerVariants} initial="hidden" animate="visible" transition={{ duration: 0.2, delay: 0.3 }}
         >
           {['MINIMAL', 'ORGANIZE', 'CUSTOM'].map((feature, index) => (

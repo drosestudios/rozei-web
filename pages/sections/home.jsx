@@ -51,6 +51,19 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col gap-6 mt-20">
+            <div className="mt-4 dark:bg-[#222222] shadow-md w-full h-auto rounded-md p-4">
+                <div className="flex flex-row justify-between items-center">
+                    <p className="font-bold text-[22px]">OFFICIAL TRAILER</p>
+
+                    <div className='flex flex-row gap-2 justify-center items-center'>
+                        <div className='bg-red-400 rounded-[50%] w-[18px] h-[18px]'></div>
+                        <div className='bg-yellow-200 rounded-[50%] w-[18px] h-[18px]'></div>
+                        <div className='bg-green-200 rounded-[50%] w-[18px] h-[18px]'></div>
+                    </div>
+                </div>
+                <iframe className="mt-2 w-full h-[250px] md:h-[500px] rounded-lg" src="https://www.youtube.com/embed/uIWy-36o69w?si=6PUMXIoN9Bdpeqcx" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
             <RoseyFeatures></RoseyFeatures>
             <RoseyShowcase></RoseyShowcase>
             <RoseyHighlights></RoseyHighlights>
