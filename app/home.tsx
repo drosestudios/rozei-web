@@ -1,6 +1,6 @@
+"use client";
 import { motion } from 'framer-motion';
 import dynamic from 'next/dynamic';
-import Head from "next/head";
 
 // IMPORTS
 import { Separator } from '@/components/ui/separator';
@@ -25,7 +25,10 @@ const appFeatures = [
   { icon: <Settings className='size-10 sm:size-12 md:size-12 lg:size-10' />, text: "Customize Rosey to match your style and preferences" },
 ];
 
-const ShowcaseFeature = ({ title, description, videoSrc, reverse }) => {
+const ShowcaseFeature = ({
+  title, description, videoSrc, reverse }: {
+  title: string; description: string; videoSrc: string; reverse?: boolean;
+}) => {
   return (
     <article
       className={`flex flex-col md:flex-row ${
@@ -95,14 +98,9 @@ const ShowcasePhrase = ({}) => {
   );
 };
 
-export default function Introduction() {
+export default function LandingPage() {
   return (
     <motion.main {...basicFadeIn}>
-      <Head>
-        <title>Rozei: Minimalism, Elegant w/ Anime</title>
-        <meta name="description" content="Rozei: A minimalistic and elegant anime app experience."/>
-      </Head>
-
       {/* MAIN ELEMENT */}
       <section className='flex flex-col justify-center items-center mt-20'>
 
@@ -215,7 +213,7 @@ export default function Introduction() {
           </div>
         </div>
 
-        <Separator className='flex opacity-65 my-14 max-w-[16rem] md:max-w-xl lg:max-w-2xl xl:max-w-3xl mx-auto'></Separator>
+        <Separator className='flex opacity-50 my-14 max-w-[16rem] md:max-w-xl lg:max-w-2xl xl:max-w-3xl mx-auto'></Separator>
 
         {/* SHOWCASE APP GIFS FEATURES */}
         <div className='w-full mx-auto px-4 md:px-10 lg:px-14 xl:px-0 max-w-5xl flex flex-col gap-12'>

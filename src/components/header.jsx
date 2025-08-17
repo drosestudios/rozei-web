@@ -1,22 +1,17 @@
+"use client";
 import { useState } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
-
-const posts = [
-  { path: 'designing-rozei-a-journey-since-2019', title: 'Designing Rozei: A Journey Since 2019' },
-  { path: 'announcing-the-rozei-website', title: 'Announcing the Rozei Website' },
-  { path: 'rozei-public-beta-coming-soon', title: 'Rozei Public Beta Coming Soon' }
-];
+import { usePathname, useRouter } from "next/navigation";
+import { articles } from '../../app/articles/articles';
 
 const Header = () => {
   // inside Header component
-  const location = useLocation();
-  const isBlogPage = location.pathname.startsWith('/blog');
-
-  const navigate = useNavigate();
+  const pathname = usePathname();
+  const router = useRouter();
+  const isBlogPage = pathname.startsWith('/articles');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleNavigation = (path) => {
-    navigate(path); setMobileMenuOpen(false);
+    router.push(path); setMobileMenuOpen(false);
   };
 
   return (
@@ -25,7 +20,7 @@ const Header = () => {
         {/* LOGO AND NAME */}
         <div onClick={() => handleNavigation('/')} className="cursor-pointer flex flex-row gap-3 items-center">
           <img src="/image3.png" className="size-9 shadow-lg"/>
-          <p className="font-bold text-xl font-poppins text-red-800">ROZEI</p>
+          <p className="font-bold text-xl font-poppins text-red-800">ROZEI APP</p>
         </div>
 
         {/* MIDDLE BUTTONS */}
@@ -37,7 +32,7 @@ const Header = () => {
             Resources
           </button>
           <button
-            onClick={() => handleNavigation('/blog')}
+            onClick={() => handleNavigation('/articles')}
             className="transition-all duration-150 text-sm hover:bg-stone-100 p-2 px-3 rounded-md font-semibold text-zinc-600"
           >
             Articles
@@ -70,18 +65,17 @@ const Header = () => {
 
         {/* MOBILE DROPDOWN MENU */}
         {mobileMenuOpen && (
-          <div className="absolute top-full left-0 w-full bg-white shadow-lg text-lg rounded-xl flex flex-col p-4 gap-4 lg:hidden z-50">
-            <p onClick={() => handleNavigation('/releases')} className="cursor-pointer font-semibold text-zinc-600 hover:text-zinc-400">
+          <div className="absolute top-full left-0 w-full bg-white shadow-lg text-base rounded-xl flex flex-col p-4 gap-4 lg:hidden z-50">
+            <p onClick={() => handleNavigation('/releases')} className="cursor-pointer font-semibold text-zinc-600 hover:text-red-900">
               Resources
             </p>
-            <p onClick={() => handleNavigation('/blog')} className="cursor-pointer font-semibold text-zinc-600 hover:text-zinc-400">
-              Blog
+            <p onClick={() => handleNavigation('/articles')} className="cursor-pointer font-semibold text-zinc-600 hover:text-red-900">
+              Articles
             </p>
             {isBlogPage && (
               <div className="flex flex-col gap-2">
-                {posts.map((post) => (
-                  <p
-                    key={post.path} onClick={() => handleNavigation(`/blog/${post.path}`)}
+                {articles.map((post) => (
+                  <p key={post.slug} onClick={() => handleNavigation(`/articles/${post.slug}`)}
                     className="cursor-pointer text-zinc-500 hover:text-red-900"
                   >
                     {post.title}
@@ -89,8 +83,8 @@ const Header = () => {
                 ))}
               </div>
             )}
-            <p onClick={() => handleNavigation('/faq')} className="cursor-pointer font-semibold text-zinc-600 hover:text-zinc-400">
-              Asked Questions
+            <p onClick={() => handleNavigation('/faq')} className="cursor-pointer font-semibold text-zinc-600 hover:text-red-900">
+              Frequently Asked Questions
             </p>
 
           </div>

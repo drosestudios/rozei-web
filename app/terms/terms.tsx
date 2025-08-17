@@ -1,16 +1,13 @@
+"use client";
 import { motion } from 'framer-motion';
-import Head from "next/head";
-
 const basicFadeIn = {
     initial: { opacity: 0 }, animate: { opacity: 1 },
     transition: { duration: 0.3, ease: "easeInOut" }
 };
 
-export default function Questions() {
+export default function Terms() {
   return (
     <motion.main {...basicFadeIn} className="pb-28">
-      <Head><title>Rozei, Privacy and TOS</title></Head>
-
       {/* Terms of Service */}
       <section className="max-w-4xl mt-14 md:mt-24 mx-auto flex text-justify flex-col gap-6 px-8 md:px-4">
         <p className="font-bold text-center font-poppins outline-bold text-2xl sm:text-3xl md:text-4xl">

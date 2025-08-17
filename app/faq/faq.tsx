@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from 'framer-motion';
 import {
     Accordion,
@@ -5,7 +7,6 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion";
-import Head from "next/head";
 
 const basicFadeIn = {
     initial: { opacity: 0 },
@@ -13,13 +14,9 @@ const basicFadeIn = {
     transition: { duration: 0.3, ease: "easeInOut" }
 };
 
-export default function Questions() {
+export default function Faq() {
   return (
     <motion.main {...basicFadeIn}>
-      <Head>
-          <title>Rozei: Frequently Asked Questions</title>
-      </Head>
-
       <section className='flex flex-col justify-center gap-4 items-center my-20'>
         <p className="flex flex-col xl:flex-row gap-2 font-bold text-6xl md:text-7xl">
           Frequently

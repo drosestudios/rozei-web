@@ -1,16 +1,13 @@
+"use client";
 import { motion } from 'framer-motion';
-import Head from "next/head";
-
 const basicFadeIn = {
     initial: { opacity: 0 }, animate: { opacity: 1 },
     transition: { duration: 0.3, ease: "easeInOut" }
 };
 
-export default function Downloads() {
+export default function Releases() {
   return (
     <motion.main {...basicFadeIn}>
-      <Head><title>Rozei: Stable Releases</title></Head>
-
       <div className='flex flex-col justify-center items-center mt-20'>
         <h1 className='flex flex-col md:block gap-1 text-6xl md:text-7xl font-bold'>
           <span className='drop-shadow-lg outline-bold'>Download <br/> Organize </span>

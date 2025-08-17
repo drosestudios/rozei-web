@@ -1,11 +1,12 @@
+"use client";
 import { Separator } from '@/components/ui/separator'
-import { useNavigate } from 'react-router-dom';
+import { useRouter } from 'next/navigation';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 
 const Footer = () => {
-  const navigate = useNavigate();
-  const handleNavigation = (path) => navigate(path);
+  const router = useRouter();
+  const handleNavigation = (path) => router.push(path);
 
   return (
     <footer className="w-full bg-[#1a1a1a] p-6 md:p-12 pb-14 md:pb-14">

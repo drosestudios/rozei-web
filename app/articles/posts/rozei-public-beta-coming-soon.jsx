@@ -1,3 +1,4 @@
+"use client";
 const basicFadeIn = {
   initial: { opacity: 0 },
   animate: { opacity: 1 },
@@ -7,14 +8,10 @@ const basicFadeIn = {
 import { BlogSectionHeader, BlogSectionAuthors, BlogSectionText } from "@/components/ui/blogstack";
 import { motion } from 'framer-motion';
 
-export const meta = {
-  title: "Rozei Public Beta Coming Soon"
-};
-
 export default function PostBeta() {
   return (
     <motion.article {...basicFadeIn} className="flex flex-col gap-4">
-      <BlogSectionHeader title={meta.title} date={'August 16, 2025'} readTime={'3 min read'}/>
+      <BlogSectionHeader title={"Rozei Public Beta Coming Soon"} date={'August 16, 2025'} readTime={'3 min read'}/>
 
       <BlogSectionAuthors
         authors={[{
