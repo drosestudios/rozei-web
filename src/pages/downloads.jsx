@@ -12,7 +12,7 @@ export default function Downloads() {
       <Head><title>Rozei: Stable Releases</title></Head>
 
       <div className='flex flex-col justify-center items-center mt-20'>
-        <h1 className='flex flex-col md:block gap-1 text-7xl font-bold'>
+        <h1 className='flex flex-col md:block gap-1 text-6xl lg:text-7xl font-bold'>
           <span className='drop-shadow-lg outline-bold'>Download <br/> Organize </span>
           <motion.span
             initial={{ backgroundSize: "0% 100%" }}
@@ -61,7 +61,7 @@ export default function Downloads() {
       </div>
 
       {/* OTHER PLATFORMS */}
-      <div className="w-auto px-12 mx-auto grid grid-cols-1 xl:grid-cols-3 gap-4 mt-4 xl:mt-2 xl:max-w-7xl">
+      <div className="w-auto px-6 mx-auto grid grid-cols-1 xl:grid-cols-3 gap-4 mt-4 xl:mt-2 xl:max-w-7xl">
         <div className='relative flex lg:hidden flex-col gap-4 bg-stone-50 rounded-2xl p-3 opacity-80'>
           <span className='absolute top-4 right-4 bg-red-100 text-red-900 px-2 py-1 rounded-lg font-semibold text-sm'>
             Coming Soon

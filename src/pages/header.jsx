@@ -20,7 +20,7 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full mt-8 p-4 px-8 bg-transparent">
+    <header className="w-full mt-6 p-4 px-8 bg-transparent">
       <nav className="flex xl:max-w-7xl flex-row justify-between items-center w-full mx-auto relative">
         {/* LOGO AND NAME */}
         <div onClick={() => handleNavigation('/')} className="cursor-pointer flex flex-row gap-3 items-center">
@@ -52,9 +52,9 @@ const Header = () => {
 
         {/* END BUTTONS */}
         <div className="flex items-center gap-2">
-          <button className="hidden lg:flex rounded-md p-2 px-3 transition-all duration-150
+          <button className="hidden rounded-md p-2 px-3 transition-all duration-150
             hover:bg-stone-100 text-sm font-semibold text-zinc-600">
-              Log In
+            Log In
           </button>
 
           <button disabled className="hidden lg:flex gap-2 flex-row dark:text-black dark:bg-white bg-[#282828] hover:bg-[#555555] rounded-lg shadow-lg justify-center items-center p-2 px-3 text-white w-fit disabled:opacity-50">
@@ -70,7 +70,7 @@ const Header = () => {
 
         {/* MOBILE DROPDOWN MENU */}
         {mobileMenuOpen && (
-          <div className="absolute top-full left-0 w-full bg-white shadow-lg text-xl rounded-xl flex flex-col p-4 gap-4 lg:hidden z-50">
+          <div className="absolute top-full left-0 w-full bg-white shadow-lg text-lg rounded-xl flex flex-col p-4 gap-4 lg:hidden z-50">
             <p onClick={() => handleNavigation('/releases')} className="cursor-pointer font-semibold text-zinc-600 hover:text-zinc-400">
               Resources
             </p>

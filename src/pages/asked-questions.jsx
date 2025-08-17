@@ -21,7 +21,7 @@ export default function Questions() {
       </Head>
 
       <section className='flex flex-col justify-center gap-4 items-center my-20'>
-        <p className="flex flex-col md:flex-row gap-2 font-bold text-7xl">
+        <p className="flex flex-col md:flex-row gap-2 font-bold text-6xl lg:text-7xl">
           Frequently
           <motion.span
             initial={{ backgroundSize: "0% 100%" }}

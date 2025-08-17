@@ -1,12 +1,11 @@
 import { motion } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
 import dynamic from 'next/dynamic';
 import Head from "next/head";
 
 // IMPORTS
 import { Separator } from '@/components/ui/separator';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { ArrowRight, Bookmark, Heart, List, ListCheck, ListOrdered, Settings, Star, UserPlus, Users } from 'lucide-react';
+import { Bookmark, Heart, List, ListCheck, ListOrdered, Settings, Star, UserPlus, Users } from 'lucide-react';
 const StackIcon = dynamic(() => import('tech-stack-icons'), { ssr: false });
 
 const basicFadeIn = {
@@ -48,7 +47,7 @@ const ShowcaseFeature = ({ title, description, videoSrc, reverse }) => {
 
       <div className="flex flex-col gap-2 text-center md:text-left w-full md:w-[45%]">
         <p className="text-xl sm:text-2xl md:text-2xl font-bold">{title}</p>
-        <p className="text-base sm:text-lg md:text-lg font-medium text-zinc-400">
+        <p className="text-base sm:text-lg md:text-lg font-medium text-zinc-500">
           {description}
         </p>
       </div>
@@ -97,8 +96,6 @@ const ShowcasePhrase = ({}) => {
 };
 
 export default function Introduction() {
-  const navigate = useNavigate();
-
   return (
     <motion.main {...basicFadeIn}>
       <Head>
@@ -110,7 +107,7 @@ export default function Introduction() {
       <section className='flex flex-col justify-center items-center mt-20'>
 
         {/* HEADER TITLE OF PRESENTATION */}
-        <h1 className='flex flex-col md:block gap-1 text-center text-7xl font-bold'>
+        <h1 className='flex flex-col md:block gap-1 text-center text-6xl lg:text-7xl font-bold'>
           <span className='drop-shadow-lg outline-bold'>Minimalist, <br/> Elegant w/ </span>
           <motion.span
             initial={{ backgroundSize: "0% 100%" }}
@@ -126,7 +123,7 @@ export default function Introduction() {
         {/* DESCRIPTION TEXT AND HIGHLIGHT */}
         <div className="mt-8 flex flex-col gap-8 text-center">
           {/* DESCRIPTION PHRASE OF THE APP */}
-          <p className="text-zinc-600 leading-relaxed text-xl text-center whitespace-normal">
+          <p className="text-zinc-600 leading-relaxed text-base lg:text-xl text-center whitespace-normal">
             Rozei: Your anime {' '}
             <motion.img
               src="/image3.png"
@@ -156,7 +153,6 @@ export default function Introduction() {
               </span>
             </motion.span>
 
-            {/* Second stat hidden on small screens */}
             <motion.span
               className="inline-flex items-center gap-2"
               initial={{ opacity: 0, y: 20 }}
@@ -190,7 +186,7 @@ export default function Introduction() {
               transition={{ duration: 0.5, delay: i * 0.10, ease: "easeOut" }}
             >
               {feature.icon}
-              <p className="font-medium text-base text-zinc-500">{feature.text}</p>
+              <p className="font-medium text-sm lg:text-base text-zinc-500">{feature.text}</p>
             </motion.div>
           ))}
         </div>
@@ -201,7 +197,7 @@ export default function Introduction() {
             <p className='font-bold font-poppins text-3xl drop-shadow-lg'>
               Powered by Passion, <br className='flex md:hidden'/> Built with Code
             </p>
-            <span className=' text-zinc-400 font-medium text-lg'>
+            <span className=' text-zinc-500 font-medium text-base lg:text-lg'>
               The tools and technologies <br className='flex md:hidden'/> that power our journey </span>
           </div>
 
@@ -213,13 +209,13 @@ export default function Introduction() {
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.6, delay: i * 0.1, ease: "easeOut" }}
               >
-                <StackIcon name={stack} className="size-20 sm:size-24 md:size-20 lg:size-16" />
+                <StackIcon name={stack} className="size-16 sm:size-20 md:size-20 lg:size-16" />
               </motion.div>
             ))}
           </div>
         </div>
 
-        <Separator className='flex opacity-65 my-14 max-w-sm md:max-w-xl lg:max-w-2xl xl:max-w-3xl mx-auto'></Separator>
+        <Separator className='flex opacity-65 my-14 max-w-[16rem] md:max-w-xl lg:max-w-2xl xl:max-w-3xl mx-auto'></Separator>
 
         {/* SHOWCASE APP GIFS FEATURES */}
         <div className='w-full mx-auto px-4 md:px-10 lg:px-14 xl:px-0 max-w-5xl flex flex-col gap-12'>
