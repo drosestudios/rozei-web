@@ -107,7 +107,7 @@ export default function Introduction() {
       <section className='flex flex-col justify-center items-center mt-20'>
 
         {/* HEADER TITLE OF PRESENTATION */}
-        <h1 className='flex flex-col md:block gap-1 text-center text-6xl lg:text-7xl font-bold'>
+        <h1 className='flex flex-col md:block gap-1 text-center text-6xl md:text-7xl font-bold'>
           <span className='drop-shadow-lg outline-bold'>Minimalist, <br/> Elegant w/ </span>
           <motion.span
             initial={{ backgroundSize: "0% 100%" }}
@@ -123,7 +123,7 @@ export default function Introduction() {
         {/* DESCRIPTION TEXT AND HIGHLIGHT */}
         <div className="mt-8 flex flex-col gap-8 text-center">
           {/* DESCRIPTION PHRASE OF THE APP */}
-          <p className="text-zinc-600 leading-relaxed text-base lg:text-xl text-center whitespace-normal">
+          <p className="text-zinc-600 leading-relaxed text-base sm:text-xl md:text-2xl text-center whitespace-normal">
             Rozei: Your anime {' '}
             <motion.img
               src="/image3.png"

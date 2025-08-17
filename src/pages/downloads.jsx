@@ -12,7 +12,7 @@ export default function Downloads() {
       <Head><title>Rozei: Stable Releases</title></Head>
 
       <div className='flex flex-col justify-center items-center mt-20'>
-        <h1 className='flex flex-col md:block gap-1 text-6xl lg:text-7xl font-bold'>
+        <h1 className='flex flex-col md:block gap-1 text-6xl md:text-7xl font-bold'>
           <span className='drop-shadow-lg outline-bold'>Download <br/> Organize </span>
           <motion.span
             initial={{ backgroundSize: "0% 100%" }}

@@ -21,7 +21,7 @@ export default function Questions() {
       </Head>
 
       <section className='flex flex-col justify-center gap-4 items-center my-20'>
-        <p className="flex flex-col md:flex-row gap-2 font-bold text-6xl lg:text-7xl">
+        <p className="flex flex-col xl:flex-row gap-2 font-bold text-6xl md:text-7xl">
           Frequently
           <motion.span
             initial={{ backgroundSize: "0% 100%" }}
@@ -32,10 +32,10 @@ export default function Questions() {
           >
             Asked
           </motion.span>
-          <br className='hidden md:flex'/> Questions
+          <br className='hidden xl:flex'/> Questions
         </p>
-        <p className='font-medium text-center  text-xl text-zinc-600'>
-          Learn more about Rozei and how <br className='flex md:hidden'/> to get the most out of it.
+        <p className='font-medium text-center text-base sm:text-xl md:text-2xl text-zinc-600'>
+          Learn more about Rozei and how <br className='flex xl:hidden'/> to get the most out of it.
         </p>
       </section>
 
