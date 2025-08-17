@@ -10,7 +10,7 @@ const Header = () => {
   const isBlogPage = pathname.startsWith('/articles');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const handleNavigation = (path) => {
+  const handleNavigation = (path: any) => {
     router.push(path); setMobileMenuOpen(false);
   };
 

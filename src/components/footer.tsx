@@ -6,7 +6,7 @@ import 'tippy.js/dist/tippy.css';
 
 const Footer = () => {
   const router = useRouter();
-  const handleNavigation = (path) => router.push(path);
+  const handleNavigation = (path: any) => router.push(path);
 
   return (
     <footer className="w-full bg-[#1a1a1a] p-6 md:p-12 pb-14 md:pb-14">
