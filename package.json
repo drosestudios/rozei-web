@@ -7,19 +7,34 @@
     "dev": "next dev"
   },
   "dependencies": {
+    "@radix-ui/react-accordion": "^1.2.2",
+    "@radix-ui/react-separator": "^1.1.0",
+    "@radix-ui/react-slot": "^1.1.1",
     "@tippyjs/react": "^4.2.6",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "embla-carousel-autoplay": "^8.5.1",
+    "embla-carousel-react": "^8.5.1",
     "file-loader": "^6.2.0",
     "framer-motion": "^11.3.24",
+    "glazejs": "^2.0.1",
+    "lucide-react": "^0.464.0",
     "next": "^14.2.5",
     "react": "^18.3.1",
+    "react-flagkit": "^2.0.4",
     "react-helmet": "^6.1.0",
     "react-router-dom": "^6.26.1",
     "react-slick": "^0.30.2",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss-animate": "^1.0.7",
+    "tech-stack-icons": "^3.3.2"
   },
   "devDependencies": {
+    "@types/react": "18.3.12",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.39",
-    "tailwindcss": "^3.4.6"
+    "tailwindcss": "^3.4.6",
+    "typescript": "5.7.2"
   }
 }

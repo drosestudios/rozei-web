@@ -1,0 +1,27 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+
+/* WEBSITE MAIN */
+:root.light { color-scheme: light; }
+:root.dark { color-scheme: dark; }
+body { overflow-x: hidden;  overflow-y: scroll; }
+
+* {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: 'Inter', sans-serif;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+}
+
+/* WEBSITE SCROLLBAR */
+*::-webkit-scrollbar-thumb {
+  border: none;
+  background-color: gray;
+  border-radius: 14px;
+}
+
+/* OTHER STUFF */
+.outline-bold {
+    color: black;
+    -webkit-text-stroke: 1px black;
+}
